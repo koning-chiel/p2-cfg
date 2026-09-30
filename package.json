@@ -1,0 +1,57 @@
+{
+  "name": "p2-cfg",
+  "icon": "images/icon.png",
+  "displayName": "Portal 2 cfg file Language Support",
+  "description": "A syntax highlighter for the configuration files from portal 2.",
+  "version": "2.0.0",
+  "author": "Koning_Chiel",
+  "publisher": "KoningChiel",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "colorizer",
+    "highlight",
+    "valve",
+    "highlighter",
+    "portal-2",
+    "Portal2",
+    "Portal 2",
+    "portal 2",
+    "portal2",
+    "portal",
+    "Portal-2",
+    "source engine",
+    "syntax"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "cfg",
+        "aliases": [
+          "Portal 2 Configuration File",
+          "cfg",
+          "CFG"
+        ],
+        "extensions": [
+          ".cfg"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "cfg",
+        "scopeName": "source.cfg",
+        "path": "./syntaxes/cfg.tmLanguage.json",
+        "name": "Dark Visual Studio"
+      }
+    ]
+  },
+  "dependencies": {
+    "@vscode/vsce": "^2.21.1"
+  }
+}
